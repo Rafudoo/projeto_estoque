@@ -122,7 +122,7 @@ public class Controle_de_Estoque extends javax.swing.JFrame {
     String pass = senha.getText();
 
     try (Connection conn = conexaoMySQL.conectar()) {
-        String sql = "SELECT * FROM usuarios WHERE usuario = ? AND senha = ?";
+        String sql = "SELECT * FROM usuario WHERE usuario = ? AND senha = ?";
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, user);
         stmt.setString(2, pass);

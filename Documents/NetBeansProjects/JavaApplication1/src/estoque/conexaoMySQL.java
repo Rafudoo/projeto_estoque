@@ -12,3 +12,4 @@ public class conexaoMySQL {
         return DriverManager.getConnection(url, usuario, senha);
     }
 }
+
